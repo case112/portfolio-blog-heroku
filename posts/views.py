@@ -14,7 +14,7 @@ def index(request):
 		'object_list': featured,
 		'latest': latest,
 		'header': header,
-		'instagram_profile_name': 'anngretts',
+		'instagram_profile_name': 'niijustongi',
 		'title': 'Home',
 	}
 	return render(request, 'index.html', context)
