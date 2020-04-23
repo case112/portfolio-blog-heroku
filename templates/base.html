@@ -1,3 +1,7 @@
+{% load static %}
+
+{% if user.is_authenticated %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,3 +17,21 @@
 </body>
 
 </html>
+
+{% else %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>nikopensius.ee</title>
+	<link rel="stylesheet" href="{% static 'css/landing.css' %}" />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 class="title">unavailable</h1>
+</body>
+</html>
+
+{% endif %}
+

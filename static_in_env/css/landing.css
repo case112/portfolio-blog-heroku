@@ -1,0 +1,21 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Baloo Tamma 2', cursive;
+	background-image: url(https://portfolio-blog-static.s3.eu-north-1.amazonaws.com/media/noise.png);
+}
+
+h1 {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.title {
+top: 47%;
+font-size: 15px;
+letter-spacing: 8px;
+color: #98AFC7;
+}
+
+

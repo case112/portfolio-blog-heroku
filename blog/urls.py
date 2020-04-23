@@ -9,7 +9,7 @@ from posts.views import index, blog, post, about
 #admin.site.__class__ = OTPAdminSite
 
 urlpatterns = [
-    path('admin/', admin.site.urls, name='admin'),
+    path('portadmin/', admin.site.urls, name='admin'),
     path('', index),
     path('about/', about),
     path('blog/', blog, name='post-list'),
