@@ -15,7 +15,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com', '.nikopensius.ee']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com']
 
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config(conn_max_age=600)
