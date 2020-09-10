@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django_otp.admin import OTPAdminSite
 
-from posts.views import index, blog, post, about
+from posts.views import index, blog, post, about, fotoalbum
 
 #admin.site.__class__ = OTPAdminSite
 
@@ -15,6 +15,7 @@ urlpatterns = [
     path('blog/', blog, name='post-list'),
     path('post/<slug>/', post, name='post-detail'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('fotoalbum/', fotoalbum),
     
 ]
 

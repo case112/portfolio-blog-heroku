@@ -27,6 +27,14 @@ def contact(request):
 	}
 	return render(request, 'contact.html', context)
 
+def fotoalbum(request):
+	header = Page.objects.filter(name="Fotoalbum")
+	context = {
+		'header': header,
+		'title': 'Fotoalbum',
+	}
+	return render(request, 'fotoalbum.html', context)
+
 def about(request):
 	header = Page.objects.filter(name="About")
 	context = {
