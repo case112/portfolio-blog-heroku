@@ -47,8 +47,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Baloo Tamma 2', cursive;
-	background: -webkit-linear-gradient(-45deg, #8363a1 0%, #74a8c3 100%);
-	background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%);	
+	background-image: linear-gradient(to right bottom, #a871cb, #9c76d1, #8f7cd6, #8180d9, #7285dc, #5a90e4, #3b9be9, #00a5eb, #00b7ea, #00c7df, #00d5cc, #5ce0b7);
 }
 
 h1 {

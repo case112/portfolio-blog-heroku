@@ -47,7 +47,8 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Baloo Tamma 2', cursive;
-	background-image: linear-gradient(to right bottom, #a871cb, #9c76d1, #8f7cd6, #8180d9, #7285dc, #5a90e4, #3b9be9, #00a5eb, #00b7ea, #00c7df, #00d5cc, #5ce0b7);
+	background: -webkit-linear-gradient(-45deg, #8363a1 0%, #74a8c3 100%);
+	background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%);	
 }
 
 h1 {
@@ -62,7 +63,63 @@ h1 {
 top: 47%;
 font-size: 35px;
 letter-spacing: 8px;
-color: rgba(22, 23, 23, 0.71);
+color: rgba(248, 255, 255, 0.71);
 }
 
 
+
+.blinking-cursor {
+	font-weight: 100;
+	font-size: 30px;
+	color: #2E3D48;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+  
+@keyframes "blink" {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: black;
+	}
+}
+  
+@-moz-keyframes blink {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: black;
+	}
+}
+  
+@-webkit-keyframes "blink" {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: black;
+	}
+}
+  
+@-ms-keyframes "blink" {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: black;
+	}
+}
+  
+@-o-keyframes "blink" {
+	from, to {
+	  color: transparent;
+	}
+	50% {
+	  color: black;
+	}
+}
